@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+
+// Tailwind CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Hamburgers Ovveride
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 34px;
+$hamburger-layer-height: 4px;
+$hamburger-layer-spacing: 5px;
+$hamburger-layer-color: #01005d;
+
+// Third Party
+@import "./library/animation.scss";
+@import "./library/hamburgers/hamburgers.scss";
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    font-family: "Nunito", sans-serif;
+  }
+
+  section {
+    @apply p-16;
+  }
+}
+
+@layer components {
+  // Cursor
+  .cursor-inner {
+    position: fixed;
+    left: 10px;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 100;
+    pointer-events: none;
+    transition: width 0.2s, height 0.2s;
+
+    @apply bg-color-third;
+  }
+
+  .cursor-inner.grow {
+    width: 70px;
+    height: 70px;
+    opacity: 40%;
+  }
+
+  .cursor-outer.grow {
+    border: none;
+  }
+
+  .cursor-outer {
+    position: fixed;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 100;
+    pointer-events: none;
+    transition: 0.08s;
+
+    @apply border-2 border-color-third border-opacity-30;
+  }
+
+  // Button
+  .btn-primary {
+    z-index: 1;
+
+    @apply relative hvr-bounce-to-right overflow-hidden bg-color-first text-white px-6
+      py-3 rounded-xl;
+  }
+
+  .btn-secondary {
+    @apply overflow-hidden text-color-first hvr-bounce-to-right bg-white font-semibold border-2 border-color-first px-6 py-3 rounded-xl;
+  }
+
+  // Half Circle
+  .half-circle {
+    @apply w-7 h-14 rounded-tl-[3.5rem] rounded-bl-[3.5rem];
+  }
+
+  // Nav Menu
+  .list-menu {
+    @apply relative py-2 px-4 text-color-text-secondary hover:text-color-text-primary;
+
+    &::after {
+      content: "";
+
+      @apply absolute w-full h-[3px] rounded-xl left-0
+        bottom-0 bg-color-first scale-x-0 transition-transform;
+    }
+
+    &:hover {
+      &::after {
+        @apply scale-x-100;
+      }
+    }
+  }
+
+  .active {
+    &::after {
+      @apply scale-x-100;
+    }
+  }
+
+  // Service Card
+  .service-card {
+    @apply bg-white p-6 rounded-2xl text-left shadow-card;
+
+    .icon-container {
+      @apply inline-block p-3 rounded-lg shadow-button;
+    }
+  }
+
+  // Our Solution Card
+  .stats-card {
+    @apply text-white shadow-card p-6 rounded-2xl;
+
+    .stat-info {
+      @apply text-4xl font-extrabold mb-2;
+    }
+
+    .stat-title {
+      @apply text-lg font-bold mb-1;
+    }
+  }
+
+  // Pricing Card
+  .pricing-card {
+    @apply bg-white shadow-card p-9 rounded-2xl;
+
+    .pricing-card__details {
+      @apply flex items-center gap-4 mb-12;
+
+      .details-img-container {
+        @apply p-2 bg-color-light-gray rounded-xl;
+      }
+    }
+
+    .pricing-card__lists {
+      @apply flex flex-col gap-4 mb-12;
+
+      .pricing-card__list {
+        @apply flex gap-2 items-center;
+      }
+
+      .pricing-card__icon-container {
+        @apply bg-color-light-gray p-[8px] rounded-full;
+      }
+    }
+
+    .pricing-card__price {
+      @apply text-5xl font-extrabold text-color-text-primary text-center mb-12;
+    }
+  }
+
+  // Blog Card
+  .blog-card__img-container {
+    @apply bg-color-light-gray pl-4 pt-4 pr-4 rounded-t-xl mb-5;
+  }
+
+  .blog-card__title {
+    @apply heading text-xl text-left leading-tight mb-2;
+  }
+}
+
+@layer utilities {
+  .shadow-header {
+    box-shadow: 0px 4px 47px -24px rgba(1, 0, 93, 0.2);
+  }
+
+  .shadow-button {
+    box-shadow: 0px 4px 10px -4px #3b50df;
+  }
+
+  .shadow-card {
+    box-shadow: 0px 4px 40px -20px rgba(59, 80, 223, 0.2);
+  }
+
+  .play-icon,
+  .checklist-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .play-icon {
+    fill: gray;
+    stroke: none;
+  }
+
+  .mail-icon {
+    width: 46px;
+    height: 46px;
+    fill: gray;
+    stroke: white;
+    stroke-width: 1.5;
+  }
+
+  .heading {
+    @apply text-color-text-primary font-extrabold;
+  }
+
+  .description {
+    @apply text-color-text-secondary;
+  }
+
+  .section-name {
+    @apply text-color-text-secondary uppercase font-extrabold text-xl mb-6;
+  }
+
+  .title {
+    @apply heading text-4xl mb-4;
+  }
+
+  .subtitle {
+    @apply description mb-6;
+  }
+
+  .social-media-icon {
+    @apply bg-color-first text-white hover:bg-color-text-primary w-10 h-10 rounded-full grid place-content-center;
+  }
+}

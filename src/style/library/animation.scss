@@ -1,0 +1,90 @@
+/* Bounce To Right */
+
+.hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+
+    @apply bg-color-text-primary;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    @apply text-white;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      transform: scaleX(1);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+  }
+}
+
+// Zoom, Rotate, Overlay
+.overlay {
+  // img coontainer class
+  position: relative;
+
+  .zoom-rotate {
+    // img class
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    @apply bg-gray-800;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.2;
+    }
+
+    .zoom-rotate {
+      // img class
+      transform: scale(1.2) rotate(8deg);
+    }
+  }
+}
+
+// Change text color
+.change-text-color {
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    @apply text-color-first;
+  }
+}
+
+// Header transition
+header {
+  transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nehan Marketing Agency Portfolio</title>
+
+    <link rel="stylesheet" href="style/main.scss" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="cursor-inner"></div>
+    <div class="cursor-outer"></div>
+    <div class="bg-color-bg">
+      <!-- start header -->
+      <header
+        class="bg-white shadow-header h-[90px] xl:h-[80px] px-9 py-7 rounded-b-3xl container flex flex-col xl:flex-row gap-10 xl:gap-0 justify-between items-center fixed top-0 left-1/2 -translate-x-1/2 z-30 overflow-hidden"
+      >
+        <button
+          id="menu-button"
+          class="hamburger hamburger--squeeze absolute xl:hidden right-[5%]"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <img class="h-9" src="images/logo.png" alt="nehan logo" />
+        <ul class="flex flex-col xl:flex-row text-center gap-1 xl:gap-4">
+          <li class="list-menu"><a href="#hero">Home</a></li>
+          <li class="list-menu"><a href="#our-services">Service</a></li>
+          <li class="list-menu"><a href="#about-us">Company</a></li>
+          <li class="list-menu"><a href="#our-solution">Solution</a></li>
+          <li class="list-menu"><a href="#pricing">Pricing</a></li>
+          <li class="list-menu"><a href="#blog">Blog</a></li>
+          <li class="list-menu"><a href="#contact-us">Contact</a></li>
+        </ul>
+        <div>
+          <button
+            class="text-color-text-primary mr-4 hover:text-color-text-secondary"
+          >
+            Sign In</button
+          ><button class="btn-primary shadow-button">Get Started</button>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- start hero -->
+      <section
+        id="hero"
+        class="h-screen pt-[80px] container mx-auto flex flex-col md:flex-row md:gap-10 justify-center md:justify-between items-center"
+      >
+        <div class="w-full lg:w-1/2">
+          <h1 class="text-5xl xl:text-6xl heading mb-9">
+            Professional marketing copy for anyone
+          </h1>
+          <h2 class="description mb-9">
+            We blend insights and strategy to create digital products for
+            forward-thingking organisations
+          </h2>
+          <div class="flex gap-14 items-center">
+            <button class="btn-primary shadow-button">Learn More</button>
+            <div class="flex items-center">
+              <div class="relative w-14 h-14 cursor-pointer mr-6">
+                <div
+                  class="bg-color-second p-2 half-circle absolute transform top-1/2 left-0 -translate-y-1/2"
+                ></div>
+                <button
+                  class="bg-white rounded-full p-3 grid place-content-center absolute transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                >
+                  <i class="play-icon" data-feather="play"></i>
+                </button>
+              </div>
+
+              <a href="" class="text-color-text-secondary change-text-color"
+                >How it Works</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full lg:w-1/2 h-full overflow-hidden hidden lg:block relative"
+        >
+          <img
+            class="absolute top-10 left-10 xl:top-10 xl:left-24 w-[180px] xl:w-[200px]"
+            src="images/performance.png"
+            alt=""
+          />
+          <img
+            class="absolute w-[340px] xl:w-[400px] right-0 top-1/2 -translate-y-1/2"
+            src="images/image.png"
+            alt=""
+          />
+          <div
+            data-tilt
+            data-tilt-reverse
+            class="absolute left-8 bottom-12 xl:left-20 xl:bottom-1/4 bg-color-second text-white p-4 text-sm rounded-xl"
+          >
+            <div class="mb-2">
+              <p class="font-bold">2M+</p>
+              <p>Trusted Users</p>
+            </div>
+            <div>
+              <p class="font-bold">90%</p>
+              <p>Return Customers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero -->
+
+      <!-- start our service -->
+      <section id="our-services" class="container mx-auto text-center">
+        <h1 class="section-name">Our Service</h1>
+        <h2 class="title">We are digital marketing pro</h2>
+        <p class="subtitle max-w-xl mx-auto">
+          No matter what you've looking for. we can create custom solution for
+          your bussiness
+        </p>
+
+        <!-- service card container -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-16"
+        >
+          <!-- service card -->
+          <div data-tilt data-tilt-reverse class="service-card">
+            <div class="bg-color-first icon-container">
+              <img class="w-8" src="images/icons/voice.png" alt="" />
+            </div>
+            <p class="heading text-lg my-3">Social Media</p>
+            <p class="description">
+              Build brand awareness on the top social media networks.
+            </p>
+          </div>
+
+          <!-- service card -->
+          <div data-tilt data-tilt-reverse class="service-card">
+            <div class="bg-color-second icon-container">
+              <img class="w-8" src="images/icons/mail.png" alt="" />
+            </div>
+            <p class="heading text-lg my-3">Email Marketing</p>
+            <p class="description">
+              Nurture valuable leads into customers, and turn one-time
+            </p>
+          </div>
+
+          <!-- service card -->
+          <div data-tilt data-tilt-reverse class="service-card">
+            <div class="bg-color-third icon-container">
+              <img class="w-8" src="images/icons/task.png" alt="" />
+            </div>
+            <p class="heading text-lg my-3">Content Marketing</p>
+            <p class="description">
+              Get professionally-written content that attracts qualified
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- end our service -->
+
+      <!-- start about us -->
+      <section id="about-us" class="container mx-auto text-center flex gap-24">
+        <div class="hidden lg:block w-1/2 relative">
+          <img
+            class="h-28 absolute -top-12 -left-8"
+            src="images/vector.png"
+            alt=""
+          />
+          <div
+            data-tilt
+            data-tilt-reverse
+            class="max-w-[500px] h-[320px] rounded-3xl z-10 absolute overflow-hidden"
+          >
+            <img
+              class="object-cover w-full h-full"
+              src="images/meeting.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            data-tilt
+            data-tilt-reverse
+            class="absolute bg-white p-6 rounded-2xl shadow-card text-center md:-bottom-6 md:-right-10 xl:-bottom-16 xl:-right-10 z-20"
+          >
+            <img
+              class="w-10 mx-auto mb-2"
+              src="images/icons/globe.png"
+              alt=""
+            />
+            <p class="text-xl font-extrabold text-color-text-primary">20.6K</p>
+            <p class="text-sm text-color-text-secondary mb-1">Reach</p>
+            <div class="flex">
+              <i
+                class="text-color-text-primary"
+                data-feather="arrow-up-right"
+              ></i>
+              <p class="font-bold text-color-text-primary">18.6%</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 flex flex-col items-start">
+          <h1 class="section-name text-left">About Us</h1>
+          <h2 class="title text-left">
+            We start with discovery call to understand
+          </h2>
+          <p class="subtitle text-left">
+            We present you a proposal and discuss like workflows, communication
+            protocol apart from engagement models, pricing, billing, and
+            invoicing.
+          </p>
+          <p class="subtitle text-left">
+            Backed an experience of nearly two decades in digital marketing.
+          </p>
+          <button class="btn-primary shadow-button">Learn More</button>
+        </div>
+      </section>
+      <!-- end about us -->
+
+      <!-- start our solution -->
+      <section id="our-solution" class="container mx-auto text-center">
+        <div class="flex gap-24 mb-28">
+          <div class="w-full lg:w-1/2 flex flex-col items-start">
+            <h1 class="section-name text-left">Our Solution</h1>
+            <h2 class="title text-left">
+              Launch and scale your marketing campaigns
+            </h2>
+            <p class="subtitle text-left">
+              We start with a kick-of call with the respective project owners,
+              onboard the teams on the project management platform and, take
+              off!
+            </p>
+
+            <button class="btn-primary shadow-button">Learn More</button>
+          </div>
+          <div class="hidden lg:block w-1/2 relative">
+            <img
+              class="h-28 absolute top-12 -right-8"
+              src="images/vector.png"
+              alt=""
+            />
+            <img
+              class="absolute max-w-[340px] right-0 top-1/2 -translate-y-1/2"
+              src="images/image-2.png"
+              alt=""
+            />
+            <div
+              data-tilt
+              data-tilt-reverse
+              class="absolute w-36 bg-white p-6 rounded-2xl shadow-card text-left top-2 left-2 xl:top-2 xl:left-24 z-20"
+            >
+              <img
+                class="w-10 mx-right mb-2"
+                src="images/icons/google.png"
+                alt=""
+              />
+              <p
+                class="text-lg leading-5 font-extrabold text-color-text-primary mb-2"
+              >
+                Google ads
+              </p>
+
+              <div class="flex items-center justify-start gap-1">
+                <img class="w-5" src="images/icons/star.png" alt="" />
+                <p class="font-bold text-color-text-primary">4.8</p>
+              </div>
+              <p class="text-sm text-color-text-secondary mb-1">298 Reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- stats card container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
+          <!-- stats card -->
+          <div data-tilt data-tilt-reverse class="bg-color-first stats-card">
+            <p class="stat-info">96%</p>
+            <p class="stat-title">Client retetion</p>
+            <p>Sed ut perspiciatis unde omnis iste</p>
+          </div>
+          <!-- stats card -->
+          <div data-tilt data-tilt-reverse class="bg-color-second stats-card">
+            <p class="stat-info">10+</p>
+            <p class="stat-title">Year of service</p>
+            <p>Sed ut perspiciatis unde omnis iste</p>
+          </div>
+          <!-- stats card -->
+          <div data-tilt data-tilt-reverse class="bg-color-third stats-card">
+            <p class="stat-info">70+</p>
+            <p class="stat-title">Professional</p>
+            <p>Sed ut perspiciatis unde omnis iste</p>
+          </div>
+          <!-- stats card -->
+          <div
+            data-tilt
+            data-tilt-reverse
+            class="bg-color-text-secondary stats-card"
+          >
+            <p class="stat-info">$37M</p>
+            <p class="stat-title">In funding</p>
+            <p>Sed ut perspiciatis unde omnis iste</p>
+          </div>
+        </div>
+      </section>
+      <!-- end our solution -->
+
+      <!-- start pricing -->
+      <section id="pricing" class="container mx-auto">
+        <div class="mx-auto max-w-[480px] text-center mb-16">
+          <h2 class="title">Pricing Plan</h2>
+          <p class="subtitle">
+            Stop wasting time and money designing and managing a website that
+            doesn't get result. Happiness guaranteed!
+          </p>
+        </div>
+        <!-- card container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- card -->
+          <div class="pricing-card">
+            <div class="pricing-card__details">
+              <div class="details-img-container">
+                <img class="h-12" src="images/icons/user.png" alt="" />
+              </div>
+              <div class="text-color-text-primary">
+                <p class="text-xl font-extrabold">Private</p>
+                <p class="font-semibold">2 Lisence</p>
+              </div>
+            </div>
+
+            <ul class="pricing-card__lists">
+              <li class="pricing-card__list">
+                <div class="pricing-card__icon-container">
+                  <i
+                    class="text-color-text-primary checklist-icon"
+                    data-feather="check"
+                  ></i>
+                </div>
+                <p class="text-color-text-secondary">Carefully crafted com</p>
+              </li>
+              <li class="pricing-card__list">
+                <div class="pricing-card__icon-container">
+                  <i
+                    class="text-color-text-primary checklist-icon"
+                    data-feather="check"
+                  ></i>
+                </div>
+                <p class="text-color-text-secondary">Amazing page examples</p>
+              </li>
+              <li class="pricing-card__list">
+                <div class="pricing-card__icon-container">
+                  <i
+                    class="text-color-text-primary checklist-icon"
+                    data-feather="check"
+                  ></i>
+                </div>
+                <p class="text-color-text-secondary">2 license code</p>
+              </li>
+            </ul>
+
+            <p class="pricing-card__price">$49</p>
+
+            <button class="btn-secondary w-full">Purchase</button>
+          </div>
+          <!-- card -->
+          <div class="pricing-card">
+            <div class="pricing-card__details">
+              <div class="details-img-container">
+                <img class="h-12" src="images/icons/people.png" alt="" />
+              </div>
+              <div class="text-color-text-primary">
+                <p class="text-xl font-extrabold">Business</p>
+                <p class="font-semibold">5 Lisence</p>
+              </div>
+            </div>
+
+            <ul class="pricing-card__lists">
+              <li class="pricing-card__list">
+                <div class="pricing-card__icon-container">
+                  <i
+                    class="text-color-text-primary checklist-icon"
+                    data-feather="check"
+                  ></i>
+                </div>
+                <p class="text-color-text-secondary">5 analytics campaigns</p>
+              </li>
+              <li class="pricing-card__list">
+                <div class="pricing-card__icon-container">
+                  <i
+                    class="text-color-text-primary checklist-icon"
+                    data-feather="check"
+                  ></i>
+                </div>
+                <p class="text-color-text-secondary">300 keywords</p>
+              </li>
+              <li class="pricing-card__list">
+                <div class="pricing-card__icon-container">
+                  <i
+                    class="text-color-text-primary checklist-icon"
+                    data-feather="check"
+                  ></i>
+                </div>
+                <p class="text-color-text-secondary">15 social pages</p>
+              </li>
+            </ul>
+
+            <p class="pricing-card__price">$139</p>
+
+            <button class="btn-secondary w-full">Purchase</button>
+          </div>
+
+          <!-- card -->
+          <div class="pricing-card">
+            <div class="pricing-card__details">
+              <div class="details-img-container">
+                <img class="h-12" src="images/icons/corporate.png" alt="" />
+              </div>
+              <div class="text-color-text-primary">
+                <p class="text-xl font-extrabold">Corporate</p>
+                <p class="font-semibold">20 Lisence</p>
+              </div>
+            </div>
+
+            <ul class="pricing-card__lists">
+              <li class="pricing-card__list">
+                <div class="pricing-card__icon-container">
+                  <i
+                    class="text-color-text-primary checklist-icon"
+                    data-feather="check"
+                  ></i>
+                </div>
+                <p class="text-color-text-secondary">100 analytics campaigns</p>
+              </li>
+              <li class="pricing-card__list">
+                <div class="pricing-card__icon-container">
+                  <i
+                    class="text-color-text-primary checklist-icon"
+                    data-feather="check"
+                  ></i>
+                </div>
+                <p class="text-color-text-secondary">7500 keywords</p>
+              </li>
+              <li class="pricing-card__list">
+                <div class="pricing-card__icon-container">
+                  <i
+                    class="text-color-text-primary checklist-icon"
+                    data-feather="check"
+                  ></i>
+                </div>
+                <p class="text-color-text-secondary">159 social accounts</p>
+              </li>
+            </ul>
+
+            <p class="pricing-card__price">$246</p>
+
+            <button class="btn-secondary w-full">Purchase</button>
+          </div>
+        </div>
+      </section>
+      <!-- end pricing -->
+
+      <!-- Start Blog -->
+      <section id="blog" class="container mx-auto text-center">
+        <div class="mx-auto max-w-[480px] text-center mb-16">
+          <h2 class="title">From our Blog</h2>
+          <p class="subtitle">
+            90% of traffic begins with a search query. Even with a high number
+            of searches being performance.
+          </p>
+        </div>
+
+        <!-- blog container -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-16"
+        >
+          <!-- blog -->
+          <div>
+            <div class="blog-card__img-container">
+              <a href="#">
+                <div class="rounded-t-lg overflow-hidden overlay">
+                  <img
+                    class="w-full h-[200px] object-cover zoom-rotate"
+                    src="images/social-media.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </div>
+            <h2 class="blog-card__title change-text-color">
+              <a href="#"> How to merge Instagram Accounts </a>
+            </h2>
+            <p class="text-color-text-secondary text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              efficitur lectus nec elit luctus.
+            </p>
+          </div>
+
+          <!-- blog -->
+          <div>
+            <div class="blog-card__img-container">
+              <a href="#">
+                <div class="rounded-t-lg overflow-hidden overlay">
+                  <img
+                    class="w-full h-[200px] object-cover zoom-rotate"
+                    src="images/seo.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </div>
+            <h2 class="blog-card__title change-text-color">
+              <a href="#"> Advanced SEO Tactics for Become an Expert </a>
+            </h2>
+            <p class="text-color-text-secondary text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              efficitur lectus nec elit luctus.
+            </p>
+          </div>
+
+          <!-- blog -->
+          <div>
+            <div class="blog-card__img-container">
+              <a href="#">
+                <div class="rounded-t-lg overflow-hidden overlay">
+                  <img
+                    class="w-full h-[200px] object-cover zoom-rotate"
+                    src="images/marketing.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </div>
+            <h2 class="blog-card__title change-text-color">
+              <a href="#"> How to Optimize Your Digital Marketing Strategy </a>
+            </h2>
+            <p class="text-color-text-secondary text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              efficitur lectus nec elit luctus.
+            </p>
+          </div>
+        </div>
+        <button class="btn-primary shadow-button">Learn More</button>
+      </section>
+      <!-- End Blog -->
+
+      <!-- Start Testimony -->
+      <section class="container mx-auto text-center">
+        <div class="mx-auto max-w-[480px] text-center mb-16">
+          <h2 class="title">Happy Clients About Us</h2>
+        </div>
+
+        <!-- testimony card -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- card -->
+          <div
+            data-tilt
+            data-tilt-reverse
+            class="bg-white shadow-card p-9 rounded-2xl"
+          >
+            <div class="flex items-center gap-4 mb-8">
+              <div class="h-[60px] aspect-square rounded-full overflow-hidden">
+                <img
+                  class="h-full w-full"
+                  src="images/profile/anthony.png"
+                  alt=""
+                />
+              </div>
+              <div class="text-left">
+                <p class="text-xl font-extrabold text-color-text-primary">
+                  Anthony
+                </p>
+                <p class="font-semibold text-color-text-secondary">
+                  CEO & Founder
+                </p>
+              </div>
+            </div>
+            <p class="text-color-text-secondary text-left">
+              “Nunc laoreet venenatis ligula. Donec et luctus tortor. Fusce et
+              fermentum odio, id feugiat nisi. Vivamus a nisl id arcu placerat
+              ultrices. ”
+            </p>
+          </div>
+
+          <!-- card -->
+          <div
+            data-tilt
+            data-tilt-reverse
+            class="bg-white shadow-card p-9 rounded-2xl"
+          >
+            <div class="flex items-center gap-4 mb-8">
+              <div class="h-[60px] aspect-square rounded-full overflow-hidden">
+                <img
+                  class="h-full w-full"
+                  src="images/profile/iriana.png"
+                  alt=""
+                />
+              </div>
+              <div class="text-left">
+                <p class="text-xl font-extrabold text-color-text-primary">
+                  Iriana Nick
+                </p>
+                <p class="font-semibold text-color-text-secondary">
+                  Lead at Nick Corp
+                </p>
+              </div>
+            </div>
+            <p class="text-color-text-secondary text-left">
+              “Nunc laoreet venenatis ligula. Donec et luctus tortor. Fusce et
+              fermentum odio, id feugiat nisi. Vivamus a nisl id arcu placerat
+              ultrices. ”
+            </p>
+          </div>
+
+          <!-- card -->
+          <div
+            data-tilt
+            data-tilt-reverse
+            class="bg-white shadow-card p-9 rounded-2xl"
+          >
+            <div class="flex items-center gap-4 mb-8">
+              <div class="h-[60px] aspect-square rounded-full overflow-hidden">
+                <img
+                  class="h-full w-full"
+                  src="images/profile/jason.png"
+                  alt=""
+                />
+              </div>
+              <div class="text-left">
+                <p class="text-xl font-extrabold text-color-text-primary">
+                  Jason Imani
+                </p>
+                <p class="font-semibold text-color-text-secondary">Founder</p>
+              </div>
+            </div>
+            <p class="text-color-text-secondary text-left">
+              “Nunc laoreet venenatis ligula. Donec et luctus tortor. Fusce et
+              fermentum odio, id feugiat nisi. Vivamus a nisl id arcu placerat
+              ultrices. ”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start Contact Us -->
+      <section id="contact-us" class="container mx-auto text-center">
+        <div class="bg-color-light-gray p-10 md:p-20 rounded-3xl">
+          <p
+            class="font-extrabold text-2xl md:text-4xl text-color-text-primary max-w-2xl mx-auto mb-10"
+          >
+            Sign up for new Nehan content, updates, and offers
+          </p>
+
+          <form action="">
+            <div
+              class="flex flex-col md:flex-row gap-6 justify-center items-center bg-white shadow-card p-6 max-w-2xl mx-auto rounded-2xl"
+            >
+              <i class="mail-icon" data-feather="mail"></i>
+              <input
+                class="flex-1 py-2 px-4 text-color-text-secondary border-2 border-color-gray md:border-none focus:outline-none focus:border-none focus:ring-2 focus:ring-color-first rounded-lg"
+                type="email"
+                placeholder="Enter your email here!"
+                required
+              />
+              <button
+                type="submit"
+                class="btn-primary shadow-button w-full md:w-auto"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End Contact Us -->
+
+      <!-- Start Footer -->
+      <footer>
+        <div
+          class="container mx-auto p-16 flex flex-col md:flex-row gap-20 md:gap-28"
+        >
+          <div class="md:max-w-xs">
+            <img
+              class="h-8 mb-4 mx-auto md:mr-auto md:ml-0"
+              src="images/logo.png"
+              alt=""
+            />
+            <p class="text-color-text-secondary text-center md:text-left mb-8">
+              We start with a discovery call to understand your company. The
+              problems you are facing.
+            </p>
+            <div>
+              <p class="heading text-lg mb-2 text-center md:text-left">
+                Follow Us
+              </p>
+              <div class="flex gap-3 justify-center md:justify-start">
+                <a
+                  href="https://facebook.com"
+                  class="social-media-icon"
+                  target="_blank"
+                >
+                  <i class="stroke-2 w-4" data-feather="facebook"></i>
+                </a>
+                <a
+                  href="https://twitter.com"
+                  class="social-media-icon"
+                  target="_blank"
+                >
+                  <i class="stroke-2 w-4" data-feather="twitter"></i>
+                </a>
+                <a
+                  href="https://instagram.com"
+                  class="social-media-icon"
+                  target="_blank"
+                >
+                  <i class="stroke-2 w-4" data-feather="instagram"></i>
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  class="social-media-icon"
+                  target="_blank"
+                >
+                  <i class="stroke-2 w-4" data-feather="linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row gap-10 text-center md:text-left md:items-start justify-center md:justify-between flex-1"
+          >
+            <div>
+              <h2 class="heading text-xl mb-4">Solutions</h2>
+              <ul class="flex flex-col gap-2">
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    SEO Service
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Social Media
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Pay-per-click
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Web Analytics
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Web Development
+                  </li></a
+                >
+              </ul>
+            </div>
+            <div>
+              <h2 class="heading text-xl mb-4">Industries</h2>
+              <ul class="flex flex-col gap-2">
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Virtual Marketing
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Email Marketing
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Keyword Analytics
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Career
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Blog Management
+                  </li></a
+                >
+              </ul>
+            </div>
+            <div>
+              <h2 class="heading text-xl mb-4">Company</h2>
+              <ul class="flex flex-col gap-2">
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Consumer
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Leadership
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Content Management
+                  </li></a
+                >
+                <a href="#">
+                  <li
+                    class="text-color-text-secondary hover:text-color-text-primary"
+                  >
+                    Login
+                  </li></a
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-color-text-primary text-white">
+          <div
+            class="container mx-auto px-16 py-4 flex flex-col md:flex-row gap-2 justify-between items-center"
+          >
+            <p>
+              All right reserved by Nehan
+              <span id="year"></span>
+            </p>
+            <p>
+              <a href="#">Privacy Policy</a>
+              |
+              <a href="#">Terms & Conditions</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+
+    <!-- JavaSript -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
