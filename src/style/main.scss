@@ -28,12 +28,18 @@ $hamburger-layer-color: #01005d;
   }
 
   section {
-    @apply p-16;
+    @apply p-8 md:p-16;
   }
 }
 
 @layer components {
   // Cursor
+
+  .cursor-inner,
+  .cursor-outer {
+    @apply hidden md:block;
+  }
+
   .cursor-inner {
     position: fixed;
     left: 10px;
